@@ -1,0 +1,2 @@
+#!/bin/sh
+exec tr '!-@b-z{B-Z[' ' -?a-zA-Z'
