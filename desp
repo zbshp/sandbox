@@ -1,2 +1,5 @@
 #!/bin/sh
-exec tr '!-@b-z{B-Z[' ' -?a-zA-Z'
+if test "$1" = "-i"
+then tr '!-zA-Z' '"-z{B-Z['
+else tr '"-z{B-Z[' '!-zA-Z'
+fi
